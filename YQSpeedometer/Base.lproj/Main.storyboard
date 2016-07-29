@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,49 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PjS-kT-bAo" customClass="YQSpeedometer">
+                                <rect key="frame" x="160" y="209" width="280" height="182"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="EQv-Pg-hkx"/>
+                                    <constraint firstAttribute="height" constant="182" id="ja0-tF-RmZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="speed">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxSpeed">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="0.0" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="SEE-6l-tGM">
+                                <rect key="frame" x="241" y="457" width="118" height="31"/>
+                                <connections>
+                                    <action selector="slideAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="9Ul-Tf-UfP"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SEE-6l-tGM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Jf-VW-tSy"/>
+                            <constraint firstItem="SEE-6l-tGM" firstAttribute="top" secondItem="PjS-kT-bAo" secondAttribute="bottom" constant="66" id="ApE-dj-S8Y"/>
+                            <constraint firstItem="PjS-kT-bAo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HCT-wJ-4Ed"/>
+                            <constraint firstItem="SEE-6l-tGM" firstAttribute="width" secondItem="PjS-kT-bAo" secondAttribute="width" id="aJ9-dm-Gbt"/>
+                            <constraint firstItem="PjS-kT-bAo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lms-h9-EXE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="speedometer" destination="PjS-kT-bAo" id="Pzh-X5-Fo4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="258" y="429"/>
         </scene>
     </scenes>
 </document>

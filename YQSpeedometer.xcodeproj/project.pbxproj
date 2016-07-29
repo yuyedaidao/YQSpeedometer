@@ -15,6 +15,9 @@
 		211B32F11D4AF0C00038AF48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211B32EF1D4AF0C00038AF48 /* LaunchScreen.storyboard */; };
 		211B32FC1D4AF0C10038AF48 /* YQSpeedometerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B32FB1D4AF0C10038AF48 /* YQSpeedometerTests.m */; };
 		211B33071D4AF0C10038AF48 /* YQSpeedometerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B33061D4AF0C10038AF48 /* YQSpeedometerUITests.m */; };
+		211B33171D4AF1580038AF48 /* YQSpeedometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B33161D4AF1580038AF48 /* YQSpeedometer.m */; };
+		211B33181D4AF1580038AF48 /* YQSpeedometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B33161D4AF1580038AF48 /* YQSpeedometer.m */; };
+		211B33191D4AF1580038AF48 /* YQSpeedometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B33161D4AF1580038AF48 /* YQSpeedometer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 		211B33021D4AF0C10038AF48 /* YQSpeedometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQSpeedometerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		211B33061D4AF0C10038AF48 /* YQSpeedometerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQSpeedometerUITests.m; sourceTree = "<group>"; };
 		211B33081D4AF0C10038AF48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		211B33151D4AF1580038AF48 /* YQSpeedometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQSpeedometer.h; sourceTree = "<group>"; };
+		211B33161D4AF1580038AF48 /* YQSpeedometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQSpeedometer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,7 @@
 		211B32D51D4AF0BF0038AF48 = {
 			isa = PBXGroup;
 			children = (
+				211B33141D4AF1310038AF48 /* Classes */,
 				211B32E01D4AF0BF0038AF48 /* YQSpeedometer */,
 				211B32FA1D4AF0C10038AF48 /* YQSpeedometerTests */,
 				211B33051D4AF0C10038AF48 /* YQSpeedometerUITests */,
@@ -138,6 +144,15 @@
 				211B33081D4AF0C10038AF48 /* Info.plist */,
 			);
 			path = YQSpeedometerUITests;
+			sourceTree = "<group>";
+		};
+		211B33141D4AF1310038AF48 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				211B33151D4AF1580038AF48 /* YQSpeedometer.h */,
+				211B33161D4AF1580038AF48 /* YQSpeedometer.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				211B32E91D4AF0C00038AF48 /* ViewController.m in Sources */,
+				211B33171D4AF1580038AF48 /* YQSpeedometer.m in Sources */,
 				211B32E61D4AF0C00038AF48 /* AppDelegate.m in Sources */,
 				211B32E31D4AF0C00038AF48 /* main.m in Sources */,
 			);
@@ -281,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				211B32FC1D4AF0C10038AF48 /* YQSpeedometerTests.m in Sources */,
+				211B33181D4AF1580038AF48 /* YQSpeedometer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				211B33071D4AF0C10038AF48 /* YQSpeedometerUITests.m in Sources */,
+				211B33191D4AF1580038AF48 /* YQSpeedometer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YQSpeedometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iqilu.YQSpeedometer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YQSpeedometer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iqilu.YQSpeedometer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
