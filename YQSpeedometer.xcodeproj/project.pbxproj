@@ -18,6 +18,9 @@
 		211B33171D4AF1580038AF48 /* YQSpeedometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B33161D4AF1580038AF48 /* YQSpeedometer.m */; };
 		211B33181D4AF1580038AF48 /* YQSpeedometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B33161D4AF1580038AF48 /* YQSpeedometer.m */; };
 		211B33191D4AF1580038AF48 /* YQSpeedometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 211B33161D4AF1580038AF48 /* YQSpeedometer.m */; };
+		211B331B1D4B35FB0038AF48 /* speed.gif in Resources */ = {isa = PBXBuildFile; fileRef = 211B331A1D4B35FB0038AF48 /* speed.gif */; };
+		211B331C1D4B35FB0038AF48 /* speed.gif in Resources */ = {isa = PBXBuildFile; fileRef = 211B331A1D4B35FB0038AF48 /* speed.gif */; };
+		211B331D1D4B35FB0038AF48 /* speed.gif in Resources */ = {isa = PBXBuildFile; fileRef = 211B331A1D4B35FB0038AF48 /* speed.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,7 @@
 		211B33081D4AF0C10038AF48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		211B33151D4AF1580038AF48 /* YQSpeedometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQSpeedometer.h; sourceTree = "<group>"; };
 		211B33161D4AF1580038AF48 /* YQSpeedometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQSpeedometer.m; sourceTree = "<group>"; };
+		211B331A1D4B35FB0038AF48 /* speed.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = speed.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		211B32E01D4AF0BF0038AF48 /* YQSpeedometer */ = {
 			isa = PBXGroup;
 			children = (
+				211B331A1D4B35FB0038AF48 /* speed.gif */,
 				211B32E41D4AF0C00038AF48 /* AppDelegate.h */,
 				211B32E51D4AF0C00038AF48 /* AppDelegate.m */,
 				211B32E71D4AF0C00038AF48 /* ViewController.h */,
@@ -260,6 +265,7 @@
 			files = (
 				211B32F11D4AF0C00038AF48 /* LaunchScreen.storyboard in Resources */,
 				211B32EE1D4AF0C00038AF48 /* Assets.xcassets in Resources */,
+				211B331B1D4B35FB0038AF48 /* speed.gif in Resources */,
 				211B32EC1D4AF0C00038AF48 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211B331C1D4B35FB0038AF48 /* speed.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211B331D1D4B35FB0038AF48 /* speed.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
