@@ -81,11 +81,11 @@
     NSInteger mid = gradientColors.count/2;
     NSMutableArray *leftColorArray = @[].mutableCopy;
     for (NSInteger i = mid; i >= 0; i--) {
-        [leftColorArray addObject:(id)gradientColors[i].CGColor];
+        [leftColorArray addObject:(__bridge id)gradientColors[i].CGColor];
     }
     NSMutableArray *rightColorArray = @[].mutableCopy;
     for (NSInteger i = mid; i < gradientColors.count; i++) {
-        [rightColorArray addObject:(id)gradientColors[i].CGColor];
+        [rightColorArray addObject:(__bridge id)gradientColors[i].CGColor];
     }
     self.leftLayer.colors = leftColorArray;
     self.rightLayer.colors = rightColorArray;
